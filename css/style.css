@@ -1,0 +1,133 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Oxygen', sans-serif; */
+:root {
+    --bluedark: #0a043c;
+    --blue: #03506f;
+    --grey: #bbbbbb;
+    --greydark: #bebebe;
+    --softpink: #ffe3d8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--greydark);
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    background: var(--bluedark);
+    /* margin-bottom: 20px; */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 60px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    
+}
+
+.header-left .logo {
+    background-image: url(../icons/Logo-grey.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 71px;
+    height: 50px;
+
+    
+}
+
+.header-left p {
+    font-size: 2rem;
+    color: var(--grey);
+    margin-left: 20px;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--grey);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.menu ul li a:hover {
+    color: var(--softpink);
+    /* box-shadow: 0px 6px 12px -7px rgba(255,227,216,1); */
+    
+}
+
+.header-left .logo:hover {
+    background-image: url(../icons/Logo-pink.svg);
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    
+    background: var(--grey);
+       
+}
+
+.main-foto {
+    
+}
+.main-foto-container {
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 400px;
+    height: 540px;
+    background: var(--blue);
+    /* padding: 40px; */
+    text-align: center;
+    overflow: hidden;
+}
+
+.perfil img {
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 77%, 0 88%);
+}
+
+.info h1,h3,h4 {margin-bottom: 10px;
+    color: var(--grey);
+}
+
+.info:last-child {
+    margin-bottom: 30px;
+}
+
+.main-details {
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}
